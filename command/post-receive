@@ -1,0 +1,6 @@
+#!/bin/sh
+unset GIT_DIR
+cd /opt/code/magichouse-front/
+git pull
+# rm -rf /opt/code/magichouse-front/
+mv /opt/code/magichouse-front/ /opt/html/haoshenqi/

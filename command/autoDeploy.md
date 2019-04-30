@@ -26,4 +26,5 @@
     unset GIT_DIR
     cd /XXX/
     git pull
-    mv /XXX/ /YYYY/ (YYYY代表你要部署的位置)
+    rm -rf /YYYY/ (YYYY代表你要部署的位置)
+    mv /XXX/ /YYYY/

@@ -28,3 +28,16 @@
     git pull
     rm -rf /YYYY/ (YYYY代表你要部署的位置)
     mv /XXX/ /YYYY/
+
+  #1.生成公钥私钥
+
+    ssh-keygen -t rsa
+    ssh-keygen -t rsa -C "shenqivpn@yahoo.com"
+  #2.复制公钥
+
+    cd
+    cd .ssh
+    scp id_rsa.pub root@HOST:/root/.ssh/authorized_keys
+    HOST 改为你的服务器ip地址
+
+    

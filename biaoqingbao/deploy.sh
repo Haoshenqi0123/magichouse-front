@@ -1,8 +1,8 @@
 #!/usr/bin/expect
 set timeout 10
-set password =Root123...
+set password Root123...
 spawn sudo tar zcf dist.tar.gz dist/
-spawn scp dist.tar.gz root@47.104.2.163:/opt/html/biaoqingbao 
+spawn scp dist.tar.gz root@47.104.2.163:/opt/html/biaoqingbao/deploy 
  expect {
  "(yes/no)?"
   {

@@ -14,7 +14,7 @@ module.exports = {
       '/apis': {
           // 测试环境
           // target: 'http://127.0.0.1:8331',
-          target: 'http://127.0.0.1:8331',
+          target: 'http://api.haoshenqi.top/biaoqingbao',
 
           changeOrigin: true,
           // preserveHeaderKeyCase: true,

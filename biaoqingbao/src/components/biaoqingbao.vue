@@ -31,10 +31,10 @@ export default {
       restaurants: [],
       state: '',
       timeout:  null,
-      host: "http://biaoqingbao.haoshenqi.top/",
+      host: "http://biaoqingbao.haoshenqi.top",
       items: [
-        {'name': '老司机', 'url': 'http://biaoqingbao.haoshenqi.top/fa2bed5c-7fac-11e9-ac84-00163e06485f.jpg'},
-        {'name': '开始', 'url': 'http://biaoqingbao.haoshenqi.top/fa29bcda-7fac-11e9-ac84-00163e06485f.jpg'}
+        {'name': '老司机', 'url': '/img/fa2bed5c-7fac-11e9-ac84-00163e06485f.jpg'},
+        {'name': '开始', 'url': '/fa29bcda-7fac-11e9-ac84-00163e06485f.jpg'}
       ],
       msg: 'Welcome to magichouse'
     }
@@ -64,7 +64,6 @@ export default {
         console.log(item);
       },
      getImgList(name) {
-       console.log("getImgList is running")
         console.log("state="+name)
         this.listLoading = true;
         return new Promise((resolve, reject) => {

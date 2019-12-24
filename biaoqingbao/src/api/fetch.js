@@ -3,8 +3,8 @@ import { Message } from 'element-ui';
 
 // 创建axios实例
 const service = axios.create({
-  // baseURL: process.env.BASE_API, // api的base_url
-  baseURL: '/apis',
+  baseURL: process.env.BASE_API,
+  // baseURL: '/apis',
   withCredentials: true,
   timeout: 5000                  // 请求超时时间
 });
